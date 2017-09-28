@@ -5,7 +5,7 @@ module.exports = {
     jest: true,
     es6: true
   },
-  extends: 'airbnb',
+  // extends: 'airbnb',
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
@@ -33,15 +33,13 @@ module.exports = {
     // 条件等于比较时，禁止字面量在左边，比如 if ('hello Yunji' === a)
     yoda: [
       'error',
-      'never',
-      {
+      'never', {
         exceptRange: true
       }
     ],
     // 禁止定义前使用变量
     'no-use-before-define': [
-      'error',
-      {
+      'error', {
         functions: false,
         classes: false
       }
@@ -71,8 +69,7 @@ module.exports = {
     // 字符串只能使用单引号或者反引号
     quotes: [
       'warn',
-      'single',
-      {
+      'single', {
         allowTemplateLiterals: true
       }
     ],
@@ -83,8 +80,7 @@ module.exports = {
     // 强制对象的花括号中有空格
     'object-curly-spacing': [
       'warn',
-      'always',
-      {
+      'always', {
         objectsInObjects: false,
         arraysInObjects: false
       }
@@ -92,8 +88,7 @@ module.exports = {
     // 强制在方括号内使用空格
     'array-bracket-spacing': [
       'warn',
-      'always',
-      {
+      'always', {
         objectsInArrays: false,
         arraysInArrays: false
       }
@@ -101,8 +96,7 @@ module.exports = {
 
     // 要求函数圆括号之前有一个空格，比如 function () {} 或 function aaa() {}
     'space-before-function-paren': [
-      'warn',
-      {
+      'warn', {
         anonymous: 'always',
         named: 'never'
       }
@@ -112,15 +106,13 @@ module.exports = {
     // 大括号风格
     'brace-style': [
       'warn',
-      '1tbs',
-      {
+      '1tbs', {
         allowSingleLine: true
       }
     ],
     // 强制在逗号周围使用空格
     'comma-spacing': [
-      'warn',
-      {
+      'warn', {
         before: false,
         after: true
       }
@@ -129,16 +121,14 @@ module.exports = {
     'comma-style': ['warn', 'last'],
     // 强制在对象字面量的键和值之间使用一致的空格
     'key-spacing': [
-      'warn',
-      {
+      'warn', {
         beforeColon: false,
         afterColon: true
       }
     ],
     // 不允许多个空行
     'no-multiple-empty-lines': [
-      'warn',
-      {
+      'warn', {
         max: 2,
         maxEOF: 1,
         maxBOF: 1
@@ -151,8 +141,7 @@ module.exports = {
     'max-nested-callbacks': ['warn', 10],
     // 要求中缀操作符周围有空格
     'space-infix-ops': [
-      'warn',
-      {
+      'warn', {
         int32Hint: false
       }
     ],
@@ -170,8 +159,7 @@ module.exports = {
     'new-cap': 'warn',
     // 允许_开头的未使用参数
     'no-unused-vars': [
-      'warn',
-      {
+      'warn', {
         argsIgnorePattern: '^_'
       }
     ],
@@ -181,16 +169,14 @@ module.exports = {
     'require-yield': 'warn',
     // 建议 generator 函数中 * 号周围有空格，比如 function* generator() {}
     'generator-star-spacing': [
-      'warn',
-      {
+      'warn', {
         before: false,
         after: true
       }
     ],
     // 建议在 yield* 表达式中 * 周围使用空格，比如 yield* other();
     'yield-star-spacing': [
-      'warn',
-      {
+      'warn', {
         before: false,
         after: true
       }
@@ -216,8 +202,7 @@ module.exports = {
     'react/jsx-indent-props': [2, 2],
     'react/jsx-space-before-closing': [2, 'never'],
     'react/jsx-filename-extension': [
-      1,
-      {
+      1, {
         extensions: ['.js', '.jsx']
       }
     ],
