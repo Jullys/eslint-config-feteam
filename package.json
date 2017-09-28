@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-feteam",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "idcos eslint config",
   "main": "index.js",
   "scripts": {
